@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">    
+    <h:head>
+        <title>Melhor Preço</title>
+        <link href="resources/css/bulma.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+    <h:body  class="is-flex" style="justify-content: center; padding-top: 200px">     
+        
+        <h:form >            
+            <div>
+                <label style="font-size: 36px">Escolha seu produto</label>
+            </div>
+            <h:inputText style="width: 200px" class="input is-link" value="#{compras.codigo}">
+                <f:passThroughAttribute name="placeholder" value="Código" />
+            </h:inputText>
+            <h:inputText style="width: 200px" class="input is-link" value="#{compras.quantidade}" >
+                <f:passThroughAttribute name="placeholder" value="Quantidade" />
+            </h:inputText>
+            <h:commandButton style="padding-left: 10px" class="button is-link" action="#{compras.erro()}" value = "Comprar"/>
+        </h:form> 
+        
+    </h:body>
+</html>
+

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Carrinho</title>
+        <link href="resources/css/bulma.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+    <h:body class="is-flex" style="justify-content: center; padding-top: 200px">
+        <div>
+            <div class="is-flex" style="align-items:center ">
+                <p class="title is-2 is-spaced">Seu carrinho está pronto</p>
+                <img style="width:30px;height: 30px" src="resources/css/carrinho-de-compras.png" alt=""/>
+            </div>
+            Produto escolhido: #{compras.codigo}
+            <br></br>
+            Preço Total: R$ #{compras.precoFinal()}             
+        </div>        
+    </h:body>    
+</html>
+
